@@ -72,10 +72,10 @@ base14 <- base14 %>%
 ## merging gastosuf e votomun
 
 base10 <- merge(base10, gastouf10, by.x = "sigla_UF", by.y = "sigla_UF")
-base14 <- merge(base14, gastouf10, by.x = "sigla_UF", by.y = "sigla_UF")
+base14 <- merge(base14, gastouf14, by.x = "sigla_UF", by.y = "sigla_UF")
 
 base10 <- merge(base10, votomun10, by.x = "ibge", by.y = "ibge")
-base14 <- merge(base14, votomun10, by.x = "ibge", by.y = "ibge")
+base14 <- merge(base14, votomun14, by.x = "ibge", by.y = "ibge")
 
 
 ## filtros codigo ibge diferente de 0
